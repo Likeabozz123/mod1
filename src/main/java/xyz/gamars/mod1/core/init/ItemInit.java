@@ -13,6 +13,6 @@ public class ItemInit {
 
     public static final RegistryObject<Item> ITEM_1 = ITEMS.register("item_1", () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
 
-    public static final RegistryObject<Item> BLOCK_1_ITEM = ITEMS.register("block_1", () -> new BlockItem(BlockInit.BLOCK_1.get(), new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+    // public static final RegistryObject<Item> BLOCK_1_ITEM = ITEMS.register("block_1", () -> new BlockItem(BlockInit.BLOCK_1.get(), new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
 
 }
