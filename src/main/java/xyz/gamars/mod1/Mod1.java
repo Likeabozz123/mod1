@@ -16,6 +16,8 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import xyz.gamars.mod1.core.init.BlockInit;
+import xyz.gamars.mod1.core.init.ItemInit;
 
 import java.util.stream.Collectors;
 
@@ -30,7 +32,12 @@ public class Mod1
     public Mod1() {
         // Register ourselves for server and other game events we are interested in
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ItemInit.ITEMS.register(bus);
+        BlockInit.BLOCKS.register(bus);
+
         MinecraftForge.EVENT_BUS.register(this);
+
     }
 
 }
