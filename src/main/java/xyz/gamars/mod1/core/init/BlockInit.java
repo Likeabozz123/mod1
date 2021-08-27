@@ -14,11 +14,15 @@ import xyz.gamars.mod1.Mod1;
 public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Mod1.MOD_ID);
 
-    public static final RegistryObject<Block> BLOCK_1 = BLOCKS.register("block_1", () -> new Block(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_BLUE)
+    public static final RegistryObject<Block> BLOCK_1 = BLOCKS.register("block_1", () -> new Block(AbstractBlock.Properties.of(Material.METAL)
             .strength(5f, 6f)
             .harvestTool(ToolType.PICKAXE).harvestLevel(4)
             .sound(SoundType.METAL)));
 
-
+    public static final RegistryObject<Block> BLOCK_2 = BLOCKS.register("block_2", () -> new Block(AbstractBlock.Properties.of(Material.STONE)
+            .strength(5f, 6f)
+            .harvestTool(ToolType.PICKAXE)
+            .harvestLevel(4)
+            .sound(SoundType.STONE)));
 
 }
