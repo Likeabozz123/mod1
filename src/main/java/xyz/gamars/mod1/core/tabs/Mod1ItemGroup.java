@@ -1,10 +1,17 @@
-package xyz.gamars.mod1.core.itemgroup;
+package xyz.gamars.mod1.core.tabs;
 
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
-import xyz.gamars.mod1.Mod1;
+import xyz.gamars.mod1.core.init.BlockInit;
 import xyz.gamars.mod1.core.init.ItemInit;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Mod1ItemGroup extends ItemGroup {
 
