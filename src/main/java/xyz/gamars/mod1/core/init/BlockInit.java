@@ -16,7 +16,8 @@ public class BlockInit {
 
     public static final RegistryObject<Block> BLOCK_1 = BLOCKS.register("block_1", () -> new Block(AbstractBlock.Properties.of(Material.METAL)
             .strength(5f, 6f)
-            .harvestTool(ToolType.PICKAXE).harvestLevel(4)
+            .harvestTool(ToolType.PICKAXE)
+            .harvestLevel(4)
             .sound(SoundType.METAL)));
 
     public static final RegistryObject<Block> BLOCK_2 = BLOCKS.register("block_2", () -> new Block(AbstractBlock.Properties.of(Material.STONE)

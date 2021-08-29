@@ -22,6 +22,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import xyz.gamars.mod1.core.init.BlockInit;
 import xyz.gamars.mod1.core.init.ItemInit;
+import xyz.gamars.mod1.core.itemgroup.Mod1ItemGroup;
 
 import java.util.stream.Collectors;
 
@@ -49,7 +50,7 @@ public class Mod1
     @SubscribeEvent
     public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
         BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
-            event.getRegistry().register(new BlockItem(block, new Item.Properties().tab(ItemGroup.TAB_BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+            event.getRegistry().register(new BlockItem(block, new Item.Properties().tab(Mod1ItemGroup.MOD_1_ITEM_GROUP)).setRegistryName(block.getRegistryName()));
         });
     }
 

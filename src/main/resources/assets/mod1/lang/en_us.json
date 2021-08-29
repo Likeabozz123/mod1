@@ -3,6 +3,8 @@
 	"item.mod1.item_2": "Item 2",
 	"item.mod1.item_3": "Item 3",
 	
-	"block.mod1.block_1": "Block 1"
+	"block.mod1.block_1": "Block 1",
+	"block.mod1.block_2": "Block 2",
 	
+	"itemGroup.mod_1_item_group": "Mod1 Items"
 }
