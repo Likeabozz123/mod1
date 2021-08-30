@@ -2,7 +2,19 @@
 	"item.mod1.item_1": "Item 1",
 	"item.mod1.item_2": "Item 2",
 	"item.mod1.item_3": "Item 3",
-	
+
+	"item.mod1.sword_1": "Sword 1",
+	"item.mod1.pickaxe_1": "Pickaxe 1",
+	"item.mod1.axe_1": "Axe 1",
+	"item.mod1.shovel_1": "Shovel 1",
+	"item.mod1.hoe_1": "Hoe 1",
+
+	"item.mod1.helmet_1": "Helmet 1",
+	"item.mod1.chestplate_1": "Chestplate 1",
+	"item.mod1.leggings_1": "Leggings 1",
+	"item.mod1.boots_1": "Boots 1",
+
+
 	"block.mod1.block_1": "Block 1",
 	"block.mod1.block_2": "Block 2",
 	

@@ -9,7 +9,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import xyz.gamars.mod1.Mod1;
-import xyz.gamars.mod1.core.init.blocks.BaseBlock;
+import xyz.gamars.mod1.objects.blocks.BaseBlock;
 
 public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Mod1.MOD_ID);

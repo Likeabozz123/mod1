@@ -1,13 +1,13 @@
-package xyz.gamars.mod1.core.init.blocks;
+package xyz.gamars.mod1.objects.items;
 
-import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 
-public class BaseBlock extends Block {
+public class BaseItem extends Item {
 
-    public BaseBlock(Properties properties) {
+    public BaseItem(Properties properties) {
         super(properties);
     }
 

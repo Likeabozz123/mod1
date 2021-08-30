@@ -13,7 +13,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import xyz.gamars.mod1.core.init.BlockInit;
 import xyz.gamars.mod1.core.init.ItemInit;
-import xyz.gamars.mod1.core.tabs.Mod1ItemGroup;
+import xyz.gamars.mod1.objects.tabs.Mod1ItemGroup;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("mod1")

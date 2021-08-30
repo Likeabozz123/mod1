@@ -5,8 +5,8 @@ import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import xyz.gamars.mod1.Mod1;
+import xyz.gamars.mod1.core.data.ModTags;
 import xyz.gamars.mod1.core.init.BlockInit;
-import xyz.gamars.mod1.core.init.ModTags;
 
 public class ModBlockTagsProvider extends BlockTagsProvider {
 
