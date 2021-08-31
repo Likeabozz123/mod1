@@ -25,7 +25,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder("item_2", itemGenerated);
         builder("item_3", itemGenerated);
 
-        builder("inspeceter_knife", itemGenerated);
+        builder("inspector_knife", itemHandheld);
 
         builder("sword_1", itemHandheld);
         builder("pickaxe_1", itemHandheld);
