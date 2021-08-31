@@ -13,15 +13,18 @@ import xyz.gamars.mod1.objects.tabs.Mod1ItemGroup;
 
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Mod1.MOD_ID);
+
     public static final ItemGroup MOD_1_ITEM_GROUP = Mod1ItemGroup.MOD_1_ITEM_GROUP;
 
     public static final RegistryObject<Item> ITEM_1 = ITEMS.register("item_1", () -> new BaseItem(new Item.Properties().tab(MOD_1_ITEM_GROUP)));
     public static final RegistryObject<Item> ITEM_2 = ITEMS.register("item_2", () -> new BaseItem(new Item.Properties().tab(MOD_1_ITEM_GROUP)));
     public static final RegistryObject<Item> ITEM_3 = ITEMS.register("item_3", () -> new BaseItem(new Item.Properties().tab(MOD_1_ITEM_GROUP)));
 
+    public static final RegistryObject<Item> INSPECTER_KNIFE = ITEMS.register("inspeceter_knife", () -> new BaseItem(new Item.Properties().tab(MOD_1_ITEM_GROUP)));
+
     // public static final RegistryObject<Item> BLOCK_1_ITEM = ITEMS.register("block_1", () -> new BlockItem(BlockInit.BLOCK_1.get(), new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
 
-    // weaponMaterial, attackDamage, attackSpeed, properties
+    // weaponMaterial, attackDamage, attackSpeed (4 - whatever speed), properties
     public static final RegistryObject<Item> SWORD_1 = ITEMS.register("sword_1",
             () -> new SwordItem(ModToolMaterial.MOD_TOOL_MATERIAL,
                     10,
