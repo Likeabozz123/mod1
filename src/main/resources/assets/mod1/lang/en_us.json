@@ -4,6 +4,7 @@
 	"item.mod1.item_3": "Item 3",
 
 	"item.mod1.inspector_knife": "Inspector Knife",
+	"item.mod1.wukongs_staff": "Wukong's Staff",
 
 	"item.mod1.sword_1": "Sword 1",
 	"item.mod1.pickaxe_1": "Pickaxe 1",
@@ -17,8 +18,8 @@
 	"item.mod1.boots_1": "Boots 1",
 
 
-	"block.mod1.block_1": "Block 1",
-	"block.mod1.block_2": "Block 2",
+	"block.mod1.item_1_block": "Item 1 Block",
+	"block.mod1.item_1_ore": "Item 1 Ore",
 	
 	"itemGroup.mod_1_item_group": "Mod1 Items"
 }

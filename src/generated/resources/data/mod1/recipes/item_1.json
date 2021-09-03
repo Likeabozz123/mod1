@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "mod1:block_1"
+      "item": "mod1:item_1_block"
     }
   ],
   "result": {

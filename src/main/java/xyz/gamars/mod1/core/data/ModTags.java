@@ -12,8 +12,8 @@ import xyz.gamars.mod1.Mod1;
 public class ModTags {
 
     public static final class Blocks {
-        public static final ITag.INamedTag<Block> ORES_ORE_1 = forge("ores/ore_1");
-        public static final ITag.INamedTag<Block> STORAGE_BLOCKS_STORAGE_BLOCK_1 = forge("storage_blocks/storage_block_1");
+        public static final ITag.INamedTag<Block> ORES_ITEM_1 = forge("ores/item_1");
+        public static final ITag.INamedTag<Block> STORAGE_BLOCKS_ITEM_BLOCK_1 = forge("storage_blocks/item_block_1");
 
         private static ITag.INamedTag<Block> forge(String path) {
             return BlockTags.bind(new ResourceLocation("forge", path).toString());
@@ -25,8 +25,8 @@ public class ModTags {
     }
 
     public static  final class Items {
-        public static final ITag.INamedTag<Item> ORES_ORE_1 = forge("ores/ore_1");
-        public static final ITag.INamedTag<Item> STORAGE_BLOCKS_STORAGE_BLOCK_1 = forge("storage_blocks/storage_block_1");
+        public static final ITag.INamedTag<Item> ORES_ITEM_1 = forge("ores/item_1");
+        public static final ITag.INamedTag<Item> STORAGE_BLOCKS_ITEM_BLOCK_1 = forge("storage_blocks/item_block_1");
 
         public static final ITag.INamedTag<Item> INGOTS_TEST_1 = forge("ingots/test_1");
 

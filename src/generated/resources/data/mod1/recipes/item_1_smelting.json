@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "mod1:block_2"
+    "item": "mod1:item_1_ore"
   },
   "result": "mod1:item_1",
   "experience": 1.0,

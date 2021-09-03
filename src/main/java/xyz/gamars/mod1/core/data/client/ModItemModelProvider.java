@@ -15,8 +15,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        withExistingParent("block_1", modLoc("block/block_1"));
-        withExistingParent("block_2", modLoc("block/block_2"));
+        withExistingParent("item_1_block", modLoc("block/item_1_block"));
+        withExistingParent("item_1_ore", modLoc("block/item_1_ore"));
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
         ModelFile itemHandheld = getExistingFile(mcLoc("item/handheld"));
@@ -26,6 +26,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder("item_3", itemGenerated);
 
         builder("inspector_knife", itemHandheld);
+        builder("wukongs_staff", itemHandheld);
 
         builder("sword_1", itemHandheld);
         builder("pickaxe_1", itemHandheld);

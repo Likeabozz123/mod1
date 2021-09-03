@@ -18,12 +18,12 @@ public class ModItemTagsProvider extends ItemTagsProvider {
     @Override
     protected void addTags() {
         //ORES
-        copy(ModTags.Blocks.ORES_ORE_1, ModTags.Items.ORES_ORE_1);
+        copy(ModTags.Blocks.ORES_ITEM_1, ModTags.Items.ORES_ITEM_1);
         copy(Tags.Blocks.ORES, Tags.Items.ORES);
 
 
         //STORAGE_BLOCKS
-        copy(ModTags.Blocks.STORAGE_BLOCKS_STORAGE_BLOCK_1, ModTags.Items.STORAGE_BLOCKS_STORAGE_BLOCK_1);
+        copy(ModTags.Blocks.STORAGE_BLOCKS_ITEM_BLOCK_1, ModTags.Items.STORAGE_BLOCKS_ITEM_BLOCK_1);
         copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS);
 
 

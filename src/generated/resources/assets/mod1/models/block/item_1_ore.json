@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "mod1:block/block_2"
+    "all": "mod1:block/item_1_ore"
   }
 }

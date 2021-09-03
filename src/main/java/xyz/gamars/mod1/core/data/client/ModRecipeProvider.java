@@ -18,12 +18,12 @@ public class ModRecipeProvider extends RecipeProvider {
     @Override
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer) {
         ShapelessRecipeBuilder.shapeless(ItemInit.ITEM_1.get(), 9)
-                .requires(BlockInit.BLOCK_1.get())
+                .requires(BlockInit.ITEM_1_BLOCK.get())
                 .unlockedBy("has_item", has(ItemInit.ITEM_1.get()))
                 .save(consumer);
         ;
 
-        ShapedRecipeBuilder.shaped(BlockInit.BLOCK_1.get())
+        ShapedRecipeBuilder.shaped(BlockInit.ITEM_1_BLOCK.get())
                 .define('#', ItemInit.ITEM_1.get())
                 .pattern("###")
                 .pattern("###")
@@ -32,11 +32,11 @@ public class ModRecipeProvider extends RecipeProvider {
                 .save(consumer);
         ;
 
-        CookingRecipeBuilder.smelting(Ingredient.of(BlockInit.BLOCK_2.get()), ItemInit.ITEM_1.get(), 1.0F, 200)
-                .unlockedBy("has_item", has(BlockInit.BLOCK_2.get()))
+        CookingRecipeBuilder.smelting(Ingredient.of(BlockInit.ITEM_1_ORE.get()), ItemInit.ITEM_1.get(), 1.0F, 200)
+                .unlockedBy("has_item", has(BlockInit.ITEM_1_ORE.get()))
                 .save(consumer, modID("item_1_smelting"));
-        CookingRecipeBuilder.blasting(Ingredient.of(BlockInit.BLOCK_2.get()), ItemInit.ITEM_1.get(), 1.0F, 100)
-                .unlockedBy("has_item", has(BlockInit.BLOCK_2.get()))
+        CookingRecipeBuilder.blasting(Ingredient.of(BlockInit.ITEM_1_ORE.get()), ItemInit.ITEM_1.get(), 1.0F, 100)
+                .unlockedBy("has_item", has(BlockInit.ITEM_1_ORE.get()))
                 .save(consumer, modID("item_1_blasting"));
     }
 

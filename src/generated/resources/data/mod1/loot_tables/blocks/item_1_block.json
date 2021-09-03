@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "mod1:block_2"
+          "name": "mod1:item_1_block"
         }
       ],
       "conditions": [
