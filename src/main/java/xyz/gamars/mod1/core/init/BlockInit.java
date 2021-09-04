@@ -15,13 +15,15 @@ public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Mod1.MOD_ID);
 
     // properties, strength, harvestTool, harvestLevel, sound
-    public static final RegistryObject<Block> ITEM_1_BLOCK = BLOCKS.register("item_1_block", () -> new BaseBlock(AbstractBlock.Properties.of(Material.METAL)
+    public static final RegistryObject<Block> ITEM_1_BLOCK = BLOCKS.register("item_1_block", () -> new BaseBlock
+            (AbstractBlock.Properties.of(Material.METAL).requiresCorrectToolForDrops()
             .strength(5f, 6f)
             .harvestTool(ToolType.PICKAXE)
             .harvestLevel(4)
             .sound(SoundType.METAL)));
 
-    public static final RegistryObject<Block> ITEM_1_ORE = BLOCKS.register("item_1_ore", () -> new BaseBlock(AbstractBlock.Properties.of(Material.STONE)
+    public static final RegistryObject<Block> ITEM_1_ORE = BLOCKS.register("item_1_ore", () -> new BaseBlock
+            (AbstractBlock.Properties.of(Material.STONE).requiresCorrectToolForDrops()
             .strength(5f, 6f)
             .harvestTool(ToolType.PICKAXE)
             .harvestLevel(4)

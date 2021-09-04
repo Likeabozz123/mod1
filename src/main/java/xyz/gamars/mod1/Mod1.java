@@ -4,6 +4,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
@@ -12,6 +13,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import xyz.gamars.mod1.core.init.BlockInit;
+import xyz.gamars.mod1.core.init.FeatureInit;
 import xyz.gamars.mod1.core.init.ItemInit;
 import xyz.gamars.mod1.objects.tabs.Mod1ItemGroup;
 
@@ -31,6 +33,8 @@ public class Mod1
         BlockInit.BLOCKS.register(bus);
         ItemInit.ITEMS.register(bus);
 
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
+        System.out.println("ORE GENERATION ADDED");
         MinecraftForge.EVENT_BUS.register(this);
 
     }
