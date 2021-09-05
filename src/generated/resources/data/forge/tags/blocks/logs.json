@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#mod1:ores"
+    "#forge:logs/sakura_log"
   ]
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#forge:storage_blocks/item_block_1"
+    "#forge:storage_blocks/item_block_1",
+    "#forge:storage_blocks"
   ]
 }

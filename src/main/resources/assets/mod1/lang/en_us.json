@@ -20,6 +20,8 @@
 
 	"block.mod1.item_1_block": "Item 1 Block",
 	"block.mod1.item_1_ore": "Item 1 Ore",
-	
+	"block.mod1.sakura_log": "Sakura Log",
+	"block.mod1.sakura_leaves": "Sakura Leaves",
+
 	"itemGroup.mod_1_item_group": "Mod1 Items"
 }

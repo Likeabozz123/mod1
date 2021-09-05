@@ -21,15 +21,42 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         copy(ModTags.Blocks.ORES_ITEM_1, ModTags.Items.ORES_ITEM_1);
         copy(Tags.Blocks.ORES, Tags.Items.ORES);
 
-
         //STORAGE_BLOCKS
         copy(ModTags.Blocks.STORAGE_BLOCKS_ITEM_BLOCK_1, ModTags.Items.STORAGE_BLOCKS_ITEM_BLOCK_1);
         copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS);
+
+        //LOGS
+        copy(ModTags.Blocks.SAKURA_LOG, ModTags.Items.SAKURA_LOG);
+        copy(ModTags.Blocks.LOGS, ModTags.Items.LOGS);
+
+        //WOOD
+        copy(ModTags.Blocks.SAKURA_WOOD, ModTags.Items.SAKURA_WOOD);
+        copy(ModTags.Blocks.WOOD, ModTags.Items.WOOD);
+
+        //LEAVES
+        copy(ModTags.Blocks.SAKURA_LEAVES, ModTags.Items.SAKURA_LEAVES);
+        copy(ModTags.Blocks.LEAVES, ModTags.Items.LEAVES);
 
 
         //INGOTS
         tag(ModTags.Items.INGOTS_TEST_1).add(ItemInit.ITEM_1.get());
         tag(Tags.Items.INGOTS).addTag(ModTags.Items.INGOTS_TEST_1);
+
+        //ITEMS
+        tag(ModTags.Items.ITEMS_ITEM_1).add(ItemInit.ITEM_1.get());
+        tag(ModTags.Items.ITEMS).addTag(ModTags.Items.ITEMS_ITEM_1);
+        //|
+        tag(ModTags.Items.ITEMS_ITEM_2).add(ItemInit.ITEM_2.get());
+        tag(ModTags.Items.ITEMS).addTag(ModTags.Items.ITEMS_ITEM_2);
+        //|
+        tag(ModTags.Items.ITEMS_ITEM_3).add(ItemInit.ITEM_3.get());
+        tag(ModTags.Items.ITEMS).addTag(ModTags.Items.ITEMS_ITEM_3);
+
+        tag(ModTags.Items.ITEMS_INSPECTOR_KNIFE).add(ItemInit.INSPECTOR_KNIFE.get());
+        tag(ModTags.Items.ITEMS).addTag(ModTags.Items.ITEMS_INSPECTOR_KNIFE);
+
+        tag(ModTags.Items.ITEMS_WUKONGS_STAFF).add(ItemInit.WUKONGS_STAFF.get());
+        tag(ModTags.Items.ITEMS).addTag(ModTags.Items.ITEMS_WUKONGS_STAFF);
 
 
         //TOOLS_1

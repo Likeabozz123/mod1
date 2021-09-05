@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#forge:ores/item_1"
+    "#forge:ores/item_1",
+    "#forge:ores"
   ]
 }

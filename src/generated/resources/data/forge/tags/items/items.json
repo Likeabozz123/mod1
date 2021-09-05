@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:items/item_1",
+    "#forge:items/item_2",
+    "#forge:items/item_3",
+    "#forge:items/inspector_knife",
+    "#forge:items/wukongs_staff"
+  ]
+}

@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import xyz.gamars.mod1.core.init.BiomeInit;
 import xyz.gamars.mod1.core.init.BlockInit;
 import xyz.gamars.mod1.core.init.FeatureInit;
 import xyz.gamars.mod1.core.init.ItemInit;
@@ -32,9 +33,10 @@ public class Mod1
 
         BlockInit.BLOCKS.register(bus);
         ItemInit.ITEMS.register(bus);
+        BiomeInit.BIOMES.register(bus);
+        BiomeInit.registerBiomes();
 
         MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
-        System.out.println("ORE GENERATION ADDED");
         MinecraftForge.EVENT_BUS.register(this);
 
     }

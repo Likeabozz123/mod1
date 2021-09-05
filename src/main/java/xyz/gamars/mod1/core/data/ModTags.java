@@ -12,8 +12,20 @@ import xyz.gamars.mod1.Mod1;
 public class ModTags {
 
     public static final class Blocks {
+        public static final ITag.INamedTag<Block> ORES = forge("ores");
         public static final ITag.INamedTag<Block> ORES_ITEM_1 = forge("ores/item_1");
+
+        public static final ITag.INamedTag<Block> STORAGE_BLOCKS = forge("storage_blocks");
         public static final ITag.INamedTag<Block> STORAGE_BLOCKS_ITEM_BLOCK_1 = forge("storage_blocks/item_block_1");
+
+        public static final ITag.INamedTag<Block> LOGS = forge("logs");
+        public static final ITag.INamedTag<Block> SAKURA_LOG = forge("logs/sakura_log");
+
+        public static final ITag.INamedTag<Block> WOOD = forge("wood");
+        public static final ITag.INamedTag<Block> SAKURA_WOOD = forge("wood/sakura_wood");
+
+        public static final ITag.INamedTag<Block> LEAVES = forge("leaves");
+        public static final ITag.INamedTag<Block> SAKURA_LEAVES = forge("leaves/sakura_leaves");
 
         private static ITag.INamedTag<Block> forge(String path) {
             return BlockTags.bind(new ResourceLocation("forge", path).toString());
@@ -25,10 +37,34 @@ public class ModTags {
     }
 
     public static  final class Items {
+
+        //BLOCKS
+        public static final ITag.INamedTag<Item> ORES = forge("ores");
         public static final ITag.INamedTag<Item> ORES_ITEM_1 = forge("ores/item_1");
+
+        public static final ITag.INamedTag<Item> STORAGE_BLOCKS = forge("storage_blocks");
         public static final ITag.INamedTag<Item> STORAGE_BLOCKS_ITEM_BLOCK_1 = forge("storage_blocks/item_block_1");
 
+        public static final ITag.INamedTag<Item> LOGS = forge("logs");
+        public static final ITag.INamedTag<Item> SAKURA_LOG = forge("logs/sakura_log");
+
+        public static final ITag.INamedTag<Item> WOOD = forge("wood");
+        public static final ITag.INamedTag<Item> SAKURA_WOOD = forge("wood/sakura_wood");
+
+        public static final ITag.INamedTag<Item> LEAVES = forge("leaves");
+        public static final ITag.INamedTag<Item> SAKURA_LEAVES  = forge("leaves/sakura_leaves");
+
+        //ITEMS
+        public static final ITag.INamedTag<Item> INGOTS = forge("ingots");
         public static final ITag.INamedTag<Item> INGOTS_TEST_1 = forge("ingots/test_1");
+
+        public static final ITag.INamedTag<Item> ITEMS = forge("items");
+        public static final ITag.INamedTag<Item> ITEMS_ITEM_1 = forge("items/item_1");
+        public static final ITag.INamedTag<Item> ITEMS_ITEM_2 = forge("items/item_2");
+        public static final ITag.INamedTag<Item> ITEMS_ITEM_3 = forge("items/item_3");
+
+        public static final ITag.INamedTag<Item> ITEMS_INSPECTOR_KNIFE = forge("items/inspector_knife");
+        public static final ITag.INamedTag<Item> ITEMS_WUKONGS_STAFF = forge("items/wukongs_staff");
 
         public static final ITag.INamedTag<Item> TOOLS = forge("tools");
         public static final ITag.INamedTag<Item> TOOLS_SWORD_1 = forge("tools/sword_1");
