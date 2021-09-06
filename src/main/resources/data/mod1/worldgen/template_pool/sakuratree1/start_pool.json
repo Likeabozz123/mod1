@@ -1,0 +1,21 @@
+{
+  "name": "mod1:sakuratree1/start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "elements": [
+          {
+            "location": "mod1:sakuratree1",
+            "processors": "minecraft:empty",
+            "projection": "rigid",
+            "element_type": "minecraft:legacy_single_pool_element"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:list_pool_element"
+      }
+    }
+  ]
+}
