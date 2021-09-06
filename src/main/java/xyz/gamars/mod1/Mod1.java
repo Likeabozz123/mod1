@@ -1,5 +1,7 @@
 package xyz.gamars.mod1;
 
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -9,6 +11,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -35,10 +38,15 @@ public class Mod1
         ItemInit.ITEMS.register(bus);
         BiomeInit.BIOMES.register(bus);
         BiomeInit.registerBiomes();
+        bus.addListener(Mod1::clientSetup);
 
         MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
         MinecraftForge.EVENT_BUS.register(this);
 
+    }
+
+    private static void clientSetup(FMLClientSetupEvent event) {
+        BlockInit.registerRenderType(event);
     }
 
     // AUTO BLOCKITEM CONVERSION

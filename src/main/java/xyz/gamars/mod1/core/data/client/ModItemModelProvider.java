@@ -15,14 +15,17 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
+        ModelFile itemHandheld = getExistingFile(mcLoc("item/handheld"));
+
         withExistingParent("item_1_block", modLoc("block/item_1_block"));
         withExistingParent("item_1_ore", modLoc("block/item_1_ore"));
         withExistingParent("sakura_log", modLoc("block/sakura_log"));
         withExistingParent("sakura_wood", modLoc("block/sakura_wood"));
         withExistingParent("sakura_leaves", modLoc("block/sakura_leaves"));
+        blockBuilder("sakura_sapling", itemGenerated);
 
-        ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
-        ModelFile itemHandheld = getExistingFile(mcLoc("item/handheld"));
+
 
         builder("item_1", itemGenerated);
         builder("item_2", itemGenerated);
@@ -46,5 +49,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     private ItemModelBuilder builder(String name, ModelFile parent) {
         return getBuilder(name).parent(parent).texture("layer0", "item/" + name);
+    }
+
+    private ItemModelBuilder blockBuilder(String name, ModelFile parent) {
+        return getBuilder(name).parent(parent).texture("layer0", "block/" + name);
     }
 }

@@ -39,6 +39,7 @@ public class ModBlockLootTables extends BlockLootTables {
         add(BlockInit.SAKURA_LEAVES.get(), leaves(BlockInit.SAKURA_LOG.get(), Items.STICK, DEFAULT_SAPLING_DROP_RATES));
         dropSelf(BlockInit.SAKURA_LOG.get());
         dropSelf(BlockInit.SAKURA_WOOD.get());
+        dropSelf(BlockInit.SAKURA_SAPLING.get());
 
         // If it drops an item, rather then the ore
         // Also gets affected by Fortune

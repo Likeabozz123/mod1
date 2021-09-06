@@ -26,8 +26,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // axisBlock((RotatedPillarBlock) BlockInit.SAKURA_LOG.get(), modLoc("block/sakura_log"), modLoc("block/sakura_log_top"));
         logBlock((RotatedPillarBlock) BlockInit.SAKURA_LOG.get());
         simpleBlock(BlockInit.SAKURA_WOOD.get());
+        simpleBlock(BlockInit.SAKURA_SAPLING.get(), models().cross("sakura_sapling", modLoc("block/sakura_sapling")));
 
     }
-
 
 }

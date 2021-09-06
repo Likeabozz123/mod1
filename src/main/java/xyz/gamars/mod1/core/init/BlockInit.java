@@ -2,11 +2,17 @@ package xyz.gamars.mod1.core.init;
 
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.trees.OakTree;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import xyz.gamars.mod1.Mod1;
@@ -43,5 +49,11 @@ public class BlockInit {
     .strength(2f).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> SAKURA_WOOD = BLOCKS.register("sakura_wood", () -> new RotatedPillarBlock(AbstractBlock.Properties.of(Material.WOOD)
     .strength(2f).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> SAKURA_SAPLING = BLOCKS.register("sakura_sapling", ()-> new SaplingBlock(new OakTree(), AbstractBlock.Properties.copy(Blocks.OAK_SAPLING)));
+
+    @OnlyIn(Dist.CLIENT)
+    public static void registerRenderType(FMLClientSetupEvent event) {
+        RenderTypeLookup.setRenderLayer(SAKURA_SAPLING.get(), RenderType.cutout());
+    }
 
 }
