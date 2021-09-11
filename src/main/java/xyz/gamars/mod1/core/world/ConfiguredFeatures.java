@@ -16,7 +16,7 @@ public class ConfiguredFeatures {
             new Mod1TreeConfig.Builder()
                     .setTrunkBlock(BlockInit.SAKURA_LOG.get())
                     .setLeavesBlock(BlockInit.SAKURA_LEAVES.get())
-                    .setMaxHeight(7)
+                    .setMaxHeight(6)
                     .setMinHeight(4)
                     .build()));
     public static final ConfiguredFeature<Mod1TreeConfig, ?> SAKURA_TREE2 = createConfiguredFeature("sakura_tree2", Mod1Features.SAKURA_TREE2.configured(
