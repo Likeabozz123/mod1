@@ -46,6 +46,7 @@ public class BlockInit {
             .sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> SAKURA_LEAVES = BLOCKS.register("sakura_leaves", () -> leavesBlock());
+    public static final RegistryObject<Block> DEAD_SAKURA_LEAVES = BLOCKS.register("dead_sakura_leaves", () -> leavesBlock());
     public static final RegistryObject<Block> SAKURA_LOG = BLOCKS.register("sakura_log", () -> new BurnableLogBlock
             (AbstractBlock.Properties.of(Material.WOOD)
             .strength(2f)

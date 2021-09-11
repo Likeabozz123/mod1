@@ -37,6 +37,7 @@ public class ModBlockLootTables extends BlockLootTables {
         dropSelf(BlockInit.ITEM_1_ORE.get());
 
         add(BlockInit.SAKURA_LEAVES.get(), leaves(BlockInit.SAKURA_SAPLING.get(), Items.STICK, DEFAULT_SAPLING_DROP_RATES));
+        add(BlockInit.DEAD_SAKURA_LEAVES.get(), leaves(BlockInit.SAKURA_SAPLING.get(), Items.STICK, DEFAULT_SAPLING_DROP_RATES));
         dropSelf(BlockInit.SAKURA_LOG.get());
         dropSelf(BlockInit.SAKURA_WOOD.get());
         dropSelf(BlockInit.SAKURA_SAPLING.get());
@@ -55,12 +56,7 @@ public class ModBlockLootTables extends BlockLootTables {
                         .when(NOT_SILK_TOUCH_OR_SHEARS)
                         .add(applyExplosionDecay(block, ItemLootEntry.lootTableItem(stick)
                                 .apply(SetCount.setCount(RandomValueRange.between(1.0F, 2.0F))))
-                                .when(TableBonus.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, 0.02F, 0.022222223F, 0.025F, 0.033333335F, 0.1F))))
-                .withPool(LootPool.lootPool()
-                        .setRolls(ConstantRange.exactly(1))
-                        .when(NOT_SILK_TOUCH_OR_SHEARS)
-                        .add(applyExplosionCondition(block, ItemLootEntry.lootTableItem(ItemInit.ITEM_1.get()))
-                                .when(TableBonus.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, 0.005F, 0.0055555557F, 0.00625F, 0.008333334F, 0.025F))));
+                                .when(TableBonus.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, 0.02F, 0.022222223F, 0.025F, 0.033333335F, 0.1F))));
     }
 
     @Override

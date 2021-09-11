@@ -23,6 +23,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("sakura_log", modLoc("block/sakura_log"));
         withExistingParent("sakura_wood", modLoc("block/sakura_wood"));
         withExistingParent("sakura_leaves", modLoc("block/sakura_leaves"));
+        withExistingParent("dead_sakura_leaves", modLoc("block/dead_sakura_leaves"));
         blockBuilder("sakura_sapling", itemGenerated);
 
 
