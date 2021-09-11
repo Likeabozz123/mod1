@@ -71,7 +71,7 @@ c13d33708b9964cade8f55fc029dbe8c7628a54e data/forge/tags/items/tools/sword_1.jso
 256732453a1a4778fac4aec4f2098a9b728b6307 data/forge/tags/items/wood.json
 3d68643962df79e870b0dc826c92a264dccef68d data/forge/tags/items/wood/sakura_wood.json
 c42c5b1c8e1e6c351c9f2315fafe2c4ef90c100a data/minecraft/tags/blocks/leaves.json
-39e43f8db9adc522aef4de2638f7d2704f38a7bd data/minecraft/tags/blocks/logs.json
+39e43f8db9adc522aef4de2638f7d2704f38a7bd data/minecraft/tags/blocks/logs_that_burn.json
 a11484d300efaf50926aaed0e360f8c68770e6bd data/mod1/advancements/recipes/mod_1_item_group/item_1.json
 d515a5311d30c72cd14684475115f1239d4287a1 data/mod1/advancements/recipes/mod_1_item_group/item_1_blasting.json
 c4801cf496c828caeb0c768baed5845f0abc0373 data/mod1/advancements/recipes/mod_1_item_group/item_1_block.json

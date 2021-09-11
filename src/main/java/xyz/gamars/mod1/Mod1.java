@@ -47,6 +47,8 @@ public class Mod1
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "mod1";
 
+    public static boolean ENABLE_OVERWORLD_TREES = true;
+
     public Mod1() {
         // Register ourselves for server and other game events we are interested in
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
