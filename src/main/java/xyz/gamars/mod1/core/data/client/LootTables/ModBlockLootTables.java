@@ -36,7 +36,7 @@ public class ModBlockLootTables extends BlockLootTables {
         dropSelf(BlockInit.ITEM_1_BLOCK.get());
         dropSelf(BlockInit.ITEM_1_ORE.get());
 
-        add(BlockInit.SAKURA_LEAVES.get(), leaves(BlockInit.SAKURA_LOG.get(), Items.STICK, DEFAULT_SAPLING_DROP_RATES));
+        add(BlockInit.SAKURA_LEAVES.get(), leaves(BlockInit.SAKURA_SAPLING.get(), Items.STICK, DEFAULT_SAPLING_DROP_RATES));
         dropSelf(BlockInit.SAKURA_LOG.get());
         dropSelf(BlockInit.SAKURA_WOOD.get());
         dropSelf(BlockInit.SAKURA_SAPLING.get());
