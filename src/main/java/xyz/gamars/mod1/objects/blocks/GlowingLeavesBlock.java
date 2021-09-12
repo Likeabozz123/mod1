@@ -5,8 +5,9 @@ import net.minecraft.block.BlockState;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
+import net.minecraftforge.common.IForgeShearable;
 
-public class GlowingLeavesBlock extends Block {
+public class GlowingLeavesBlock extends Block implements IForgeShearable {
 
     public GlowingLeavesBlock(Properties properties) {
         super(properties);

@@ -35,5 +35,5 @@ public class BurnableLeavesBlock extends LeavesBlock {
     public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
         return 30;
     }
-    
+
 }

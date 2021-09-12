@@ -43,7 +43,7 @@ public class BlockInit {
             .sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> SAKURA_LEAVES = BLOCKS.register("sakura_leaves", () -> leavesBlock());
-    public static final RegistryObject<Block> TRUE_SAKURA_LEAVES = BLOCKS.register("true_sakura_leaves", () -> new GlowingLeavesBlock(AbstractBlock.Properties.of(Material.LEAVES).strength(0.2f).sound(SoundType.GRASS).noCollission().isSuffocating(BlockInit::never).isViewBlocking(BlockInit::never)));
+    public static final RegistryObject<Block> TRUE_SAKURA_LEAVES = BLOCKS.register("true_sakura_leaves", () -> new GlowingLeavesBlock(AbstractBlock.Properties.of(Material.LEAVES).strength(0.2f).sound(SoundType.GRASS).noOcclusion().isSuffocating(BlockInit::never).isViewBlocking(BlockInit::never)));
     public static final RegistryObject<Block> DEAD_SAKURA_LEAVES = BLOCKS.register("dead_sakura_leaves", () -> leavesBlock());
     public static final RegistryObject<Block> SAKURA_LOG = BLOCKS.register("sakura_log", () -> new BurnableLogBlock
             (AbstractBlock.Properties.of(Material.WOOD)
