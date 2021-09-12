@@ -35,6 +35,7 @@ e9aa301446385eb41102a56b6858334601463665 assets/mod1/models/item/sakura_sapling.
 de9553e84a164679e20d4fd18d46da7074657e6c assets/mod1/models/item/sakura_wood.json
 74c4772e0dbe283a1cb51210572043f02c757707 assets/mod1/models/item/shovel_1.json
 e2a1594bf52acbd9940f71c751e803ee8e58f871 assets/mod1/models/item/sword_1.json
+cfbd1a9e8a9edbb6b906612354816beb40a90afa assets/mod1/models/item/true_sakura_flower.json
 7fee56dbf2fed0cd9c1899064c5ad7c1ba054687 assets/mod1/models/item/true_sakura_leaves.json
 f74d0eaf00120fd214a9e2c4d71b26d804b3561f assets/mod1/models/item/wukongs_staff.json
 cc0d8bd103498987d4c399f6b4d7d009450f230c data/forge/tags/blocks/leaves.json
@@ -54,11 +55,12 @@ e342c6f4e6b855c39ab2f5304e250bd9cd8bd857 data/forge/tags/blocks/storage_blocks/i
 c7bfb91e9a04d272ef18fcc900ac6aad81b9c3e8 data/forge/tags/items/armor/leggings_1.json
 2ddcb7b246466d723f2ca1b4c380abcbdff880ab data/forge/tags/items/ingots.json
 4c2e820f47200b037122a9cb2a5cc93507409f4c data/forge/tags/items/ingots/test_1.json
-3aea26c290a98b82459c8dc6f98cc6645e8ab0a4 data/forge/tags/items/items.json
+97db9e439be4df15fa954ba40d30b6a027a1417c data/forge/tags/items/items.json
 4b6646bd8befb43583b7b7bca19378074fd1c68c data/forge/tags/items/items/inspector_knife.json
 4c2e820f47200b037122a9cb2a5cc93507409f4c data/forge/tags/items/items/item_1.json
 715b941eb8caf4b7e96949815bf7147708e70a11 data/forge/tags/items/items/item_2.json
 798e2413bb40b6db853d23ef8da001298698ebce data/forge/tags/items/items/item_3.json
+c3f4f708e246e3aad475150b762a1a359587413e data/forge/tags/items/items/true_sakura_flower.json
 d33e05d0fd6d80cfa113fd31ab0e67b7da7fe1bd data/forge/tags/items/items/wukongs_staff.json
 cc0d8bd103498987d4c399f6b4d7d009450f230c data/forge/tags/items/leaves.json
 bac4d865467ef2fd474a9dfc7bc5e70fdc9a5fdf data/forge/tags/items/leaves/sakura_leaves.json

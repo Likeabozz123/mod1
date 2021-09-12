@@ -22,6 +22,7 @@ public class ItemInit {
 
     public static final RegistryObject<Item> INSPECTOR_KNIFE = ITEMS.register("inspector_knife", () -> new BaseItem(new Item.Properties().tab(MOD_1_ITEM_GROUP)));
     public static final RegistryObject<Item> WUKONGS_STAFF = ITEMS.register("wukongs_staff", () -> new BaseItem(new Item.Properties().tab(MOD_1_ITEM_GROUP)));
+    public static final RegistryObject<Item> TRUE_SAKURA_FLOWER = ITEMS.register("true_sakura_flower", () -> new BaseItem(new Item.Properties().tab(MOD_1_ITEM_GROUP)));
 
     // public static final RegistryObject<Item> BLOCK_1_ITEM = ITEMS.register("block_1", () -> new BlockItem(BlockInit.BLOCK_1.get(), new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
 

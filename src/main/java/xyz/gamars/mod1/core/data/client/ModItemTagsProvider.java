@@ -52,6 +52,9 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.ITEMS_ITEM_3).add(ItemInit.ITEM_3.get());
         tag(ModTags.Items.ITEMS).addTag(ModTags.Items.ITEMS_ITEM_3);
 
+        tag(ModTags.Items.ITEMS_TRUE_SAKURA_FLOWER).add(ItemInit.TRUE_SAKURA_FLOWER.get());
+        tag(ModTags.Items.ITEMS).addTag(ModTags.Items.ITEMS_TRUE_SAKURA_FLOWER);
+
         tag(ModTags.Items.ITEMS_INSPECTOR_KNIFE).add(ItemInit.INSPECTOR_KNIFE.get());
         tag(ModTags.Items.ITEMS).addTag(ModTags.Items.ITEMS_INSPECTOR_KNIFE);
 

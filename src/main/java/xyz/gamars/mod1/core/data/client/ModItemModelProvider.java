@@ -36,6 +36,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder("inspector_knife", itemHandheld);
         builder("wukongs_staff", itemHandheld);
 
+        builder("true_sakura_flower", itemGenerated);
+
         builder("sword_1", itemHandheld);
         builder("pickaxe_1", itemHandheld);
         builder("axe_1", itemHandheld);

@@ -65,6 +65,7 @@ public class ModTags {
 
         public static final ITag.INamedTag<Item> ITEMS_INSPECTOR_KNIFE = forge("items/inspector_knife");
         public static final ITag.INamedTag<Item> ITEMS_WUKONGS_STAFF = forge("items/wukongs_staff");
+        public static final ITag.INamedTag<Item> ITEMS_TRUE_SAKURA_FLOWER = forge("items/true_sakura_flower");
 
         public static final ITag.INamedTag<Item> TOOLS = forge("tools");
         public static final ITag.INamedTag<Item> TOOLS_SWORD_1 = forge("tools/sword_1");
