@@ -18,10 +18,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import xyz.gamars.mod1.Mod1;
 import xyz.gamars.mod1.core.world.feature.trees.TreeSpawner;
 import xyz.gamars.mod1.core.world.TreeInit;
-import xyz.gamars.mod1.objects.blocks.BaseBlock;
-import xyz.gamars.mod1.objects.blocks.BurnableLeavesBlock;
-import xyz.gamars.mod1.objects.blocks.BurnableLogBlock;
-import xyz.gamars.mod1.objects.blocks.CustomSapling;
+import xyz.gamars.mod1.objects.blocks.*;
 
 public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Mod1.MOD_ID);
@@ -46,6 +43,7 @@ public class BlockInit {
             .sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> SAKURA_LEAVES = BLOCKS.register("sakura_leaves", () -> leavesBlock());
+    public static final RegistryObject<Block> TRUE_SAKURA_LEAVES = BLOCKS.register("true_sakura_leaves", () -> new GlowingLeavesBlock(AbstractBlock.Properties.of(Material.LEAVES).strength(0.2f).sound(SoundType.GRASS).noCollission().isSuffocating(BlockInit::never).isViewBlocking(BlockInit::never)));
     public static final RegistryObject<Block> DEAD_SAKURA_LEAVES = BLOCKS.register("dead_sakura_leaves", () -> leavesBlock());
     public static final RegistryObject<Block> SAKURA_LOG = BLOCKS.register("sakura_log", () -> new BurnableLogBlock
             (AbstractBlock.Properties.of(Material.WOOD)
@@ -65,6 +63,7 @@ public class BlockInit {
     @OnlyIn(Dist.CLIENT)
     public static void registerRenderType(FMLClientSetupEvent event) {
         RenderTypeLookup.setRenderLayer(SAKURA_SAPLING.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(TRUE_SAKURA_LEAVES.get(), RenderType.cutout());
     }
 
     static Block createSapling(ITag<Block> groundTag, TreeSpawner tree) {

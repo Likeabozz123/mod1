@@ -1,24 +1,20 @@
 package xyz.gamars.mod1.objects.blocks;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.LeavesBlock;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.shapes.VoxelShape;
-import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.IWorld;
-import net.minecraft.world.World;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+public class GlowingLeavesBlock extends Block {
 
-public class BurnableLeavesBlock extends LeavesBlock {
-
-    public BurnableLeavesBlock(Properties properties) {
+    public GlowingLeavesBlock(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    public int getLightValue(BlockState state, IBlockReader world, BlockPos pos) {
+        return 12;
     }
 
     @Override
@@ -35,5 +31,6 @@ public class BurnableLeavesBlock extends LeavesBlock {
     public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
         return 30;
     }
-    
+
+
 }
