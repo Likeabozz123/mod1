@@ -30,6 +30,7 @@ public class ModBlockLootTables extends BlockLootTables {
     private static final ILootCondition.IBuilder SILK_TOUCH_OR_SHEARS = SHEARS.or(SILK_TOUCH);
     private static final ILootCondition.IBuilder NOT_SILK_TOUCH_OR_SHEARS = SILK_TOUCH_OR_SHEARS.invert();
     private static final float[] DEFAULT_SAPLING_DROP_RATES = new float[]{0.05F, 0.0625F, 0.083333336F, 0.1F};
+    private static final float[] PURE_SAKURA_BLOSSOM_DROP_RATES = new float[]{0.001F, 0.00625F, 0.0083333336F, 0.01F};
 
     @Override
     protected void addTables() {
@@ -38,7 +39,7 @@ public class ModBlockLootTables extends BlockLootTables {
 
         add(BlockInit.SAKURA_LEAVES.get(), leaves(BlockInit.SAKURA_SAPLING.get(), Items.STICK, DEFAULT_SAPLING_DROP_RATES));
         add(BlockInit.DEAD_SAKURA_LEAVES.get(), leaves(BlockInit.SAKURA_SAPLING.get(), Items.STICK, DEFAULT_SAPLING_DROP_RATES));
-        add(BlockInit.TRUE_SAKURA_LEAVES.get(), leaves(BlockInit.SAKURA_SAPLING.get(), Items.STICK, DEFAULT_SAPLING_DROP_RATES));
+        add(BlockInit.TRUE_SAKURA_LEAVES.get(), pureLeaves(ItemInit.TRUE_SAKURA_FLOWER.get(), PURE_SAKURA_BLOSSOM_DROP_RATES));
         dropSelf(BlockInit.SAKURA_LOG.get());
         dropSelf(BlockInit.SAKURA_WOOD.get());
         dropSelf(BlockInit.SAKURA_SAPLING.get());
@@ -58,6 +59,12 @@ public class ModBlockLootTables extends BlockLootTables {
                         .add(applyExplosionDecay(block, ItemLootEntry.lootTableItem(stick)
                                 .apply(SetCount.setCount(RandomValueRange.between(1.0F, 2.0F))))
                                 .when(TableBonus.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, 0.02F, 0.022222223F, 0.025F, 0.033333335F, 0.1F))));
+    }
+
+    @Nonnull
+    private static Function<Block, LootTable.Builder> pureLeaves(IItemProvider item, float... chances) {
+        return (block) -> createSelfDropDispatchTable(block, SILK_TOUCH_OR_SHEARS, applyExplosionCondition(block, ItemLootEntry.lootTableItem(item))
+                .when(TableBonus.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, chances)));
     }
 
     @Override

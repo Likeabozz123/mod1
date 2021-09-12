@@ -15,7 +15,7 @@ public class GlowingLeavesBlock extends Block implements IForgeShearable {
 
     @Override
     public int getLightValue(BlockState state, IBlockReader world, BlockPos pos) {
-        return 12;
+        return 15;
     }
 
     @Override

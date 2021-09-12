@@ -91,7 +91,7 @@ bb900b00a7f7699a023419fa814f49613fb4398f data/mod1/loot_tables/blocks/sakura_lea
 5b145906e0ed73c6328540d8d66ec385d3d854eb data/mod1/loot_tables/blocks/sakura_log.json
 72de99a84005895fb2a4f1ca68992c905845684f data/mod1/loot_tables/blocks/sakura_sapling.json
 33486b326754c050a86ac77ad755531622a246ff data/mod1/loot_tables/blocks/sakura_wood.json
-f0d14ba2c6f9861ba1171b6de9d88481321873bb data/mod1/loot_tables/blocks/true_sakura_leaves.json
+a91097b2e15c3395944a7faa9317a7b4b0078dc6 data/mod1/loot_tables/blocks/true_sakura_leaves.json
 d9942fe709adefe87f688afe90104c33a4f39043 data/mod1/recipes/item_1.json
 60c09076c55b71a65743da636609ce18e20ca4c3 data/mod1/recipes/item_1_blasting.json
 23e5b086e00a3554d2567d9d3d60116e1bfdbf25 data/mod1/recipes/item_1_block.json
